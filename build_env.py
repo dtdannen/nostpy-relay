@@ -22,7 +22,7 @@ try:
         "python3 prepare_server.py",
     ]
     for cmd in commands:
-        subprocess.run(["sudo", "bash", "-c", cmd], check=True)
+        subprocess.run(["bash", "-c", cmd], check=True)
 
 except subprocess.CalledProcessError as e:
     print(f"An error occurred while executing the command: {e}")
